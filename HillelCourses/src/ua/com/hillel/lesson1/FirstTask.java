@@ -1,28 +1,24 @@
 package ua.com.hillel.lesson1;
 
 public class FirstTask {
-    public void firstTask(){
+    public void firstTask() {
         for (int i = 1; i < 101; i++) {
-            if(i % 3 == 0 && (i % 5 != 0)){
+            if (i % 3 == 0 && i % 5 == 0)
+                System.out.print("Hello world, ");
+            else if (i % 3 == 0)
                 System.out.print("Hello, ");
-                continue;
-            }
-            if((i % 5 == 0) && (i % 3 == 0)){
-                System.out.print("Hello World, ");
-                continue;
-            }
-            if(i % 5 == 0){
-                if(i == 100){
-                    System.out.print("World");
-                    break;
+            else if (i % 5 == 0) {
+                if (i == 100) {
+                    System.out.print("World.");
+                } else {
+                    System.out.print("World, ");
                 }
-                System.out.print("World, ");
-                continue;
+            } else {
+                System.out.print(i + ", ");
             }
-
-            System.out.print(i + ", ");
-
-
         }
+        System.out.println();
+
     }
 }
+
