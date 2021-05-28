@@ -1,0 +1,1 @@
+Index is: 0;Number of repetitions is: 3; Number of chars is: 7; 
